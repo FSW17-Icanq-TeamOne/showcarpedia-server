@@ -7,7 +7,7 @@ router.get("/v1/get-collection",(req,res)=> res.send("Showcarpedia Collection Li
 router.use("/v1", v1)
 
 //Testing Auth
-// router.use(authentication)
+router.use(authentication)
 router.get("/lolos",(req,res)=> res.send("lolos auth"))
 
 module.exports = router
