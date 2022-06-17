@@ -4,6 +4,7 @@ const authentication = require('../middleware/authentication')
 
 router.get("/",(req,res)=> res.send("API Showcarpedia Version 1.0"))
 router.get("/v1/get-collection",(req,res)=> res.send("Showcarpedia Collection List 2022"))
+router.get("/v1/get-user",(req,res)=> res.send("Showcarpedia User List 2022"))
 router.use("/v1", v1)
 
 //Testing Auth
