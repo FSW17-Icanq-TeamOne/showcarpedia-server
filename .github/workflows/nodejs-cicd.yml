@@ -32,7 +32,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /home/jepra/mono-repo/showcarpedia-server
-            git pull origin develop
+            git pull origin main
             git status
             npm install --only=prod
             pm2 restart showcarpedia-server
